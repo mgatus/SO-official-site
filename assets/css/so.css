@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+		transition: all 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		font-family: 'Montserrat', sans-serif;
+}
+
+.overlay {
+		position: fixed;
+		background: rgba(51, 51, 51, 0.45);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1001;
+		display: none;
+}
+
+.button {
+		border-radius: 30px;
+		background: #169B79;
+		color: #fff;
+}
+
+.white-button {
+		background: #fff;
+		color: #169B79;
+}
+
+.main-text-color {
+		color: #169B79;
+}
+
+.background-color {
+		background-color: #169B79;
+}
+
+body {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 100%;
+}
+
+header {
+		background: rgba(255, 255, 255, 0.92);
+		padding: 15px 0;
+}
+
+header nav {
+		padding: 25px 0 !important;
+}
+
+header.fixed-top {
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+}
+
+.so-logo {
+		background-image: url("./../img/SO_green.png");
+		background-repeat: no-repeat;
+		background-position: left;
+		text-indent: -9999px;
+		height: 62.2px;
+}
+
+.so-menu-toggle {
+		transition: all 0.1s;
+		color: #333;
+		outline: none;
+		background: transparent;
+		float: right;
+		border: none;
+		display: none;
+		margin-right: 5%;
+		position: relative;
+}
+
+.so-menu-toggle:focus {
+		transition: all 0.1s;
+		outline: none;
+		transition: none;
+}
+
+.toggle-active {
+		color: #169B79;
+}
+
+#navbarNav {
+		display: flex;
+		flex-direction: column-reverse;
+}
+
+#navbarNav .navbar-nav {
+		display: flex;
+		justify-content: flex-end;
+}
+
+#navbarNav .navbar-nav a {
+		color: #666666;
+		font-weight: 700;
+}
+
+#navbarNav .navbar-nav a:hover {
+		color: #169B79;
+}
+
+.special-corner {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 15px;
+}
+
+.special-corner a {
+		border-radius: 30px;
+		font-size: 0.7rem;
+		height: 31px;
+		color: #fff;
+}
+
+.special-corner a.demo {
+		background: #95989A !important;
+		border: 1px solid #868686;
+}
+
+.special-corner a.enquire {
+		background: #169B79 !important;
+		border: 1px solid #169B79;
+}
+
+.special-corner > * {
+		margin: 0 5px;
+}
+
+.special-corner .control.search input[type="text"] {
+		height: 31px;
+		border-radius: 30px;
+		border-left: 0;
+		background: transparent;
+		border: 1px solid #bfbfbf;
+		color: #666666;
+		padding-left: 2.25em;
+		outline: none;
+}
+
+.special-corner .control.search .icon {
+		top: -3px;
+}
+
+.banner-upper-content {
+		background-image: url("./../img/mainBanner.png");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		min-height: 100vh;
+		padding-top: 160px;
+}
+
+.banner-upper-content .breadcrumbs {
+		display: none;
+}
+
+.banner-upper-content .breadcrumbs ul {
+		list-style: none;
+		width: 100%;
+		float: left;
+}
+
+.banner-upper-content .breadcrumbs ul li {
+		display: list-item;
+		float: left;
+		margin: 0 8px;
+		border-right: 1px solid #666666;
+		padding: 0 8px;
+}
+
+.banner-upper-content .upper-contents .tagline {
+		text-align: center;
+		margin-top: 50px;
+}
+
+.banner-upper-content .upper-contents .tagline h1 {
+		font-weight: 700 !important;
+		font-size: 3rem;
+		color: #666666;
+}
+
+.banner-upper-content .upper-contents .tagline small {
+		font-size: 1rem;
+		color: #666666;
+}
+
+.lower-content article {
+		line-height: 2rem;
+		color: #666666;
+}
+
+.lower-content article .info img {
+		width: 100%;
+}
+
+footer {
+		padding: 5% 0;
+		background: #FCFCFC;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+}
+
+footer strong {
+		color: #169B79;
+}
+
+footer .social-icons {
+		margin: 1% 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 5%;
+}
+
+footer .social-icons .fa-facebook-official {
+		color: #4267b2;
+}
+
+footer .social-icons .fa-linkedin-square {
+		color: #0073b0;
+}
+
+footer .social-icons .fa-youtube-play {
+		color: #ff0000;
+}
+
+footer .footer-links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 28%;
+}
+
+footer .footer-links a {
+		color: #666666;
+}
+
+footer hr {
+		color: #333;
+		width: 70%;
+}
+
+footer h6 small {
+		font-size: 0.8rem;
+}

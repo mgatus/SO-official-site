@@ -1,0 +1,151 @@
+// compileExpanded: ..\css\mq.css
+
+$mainColor: #169B79
+
+@media (max-width: 33.9em)
+  // write CSS properties here
+  header .container
+    width: 100%
+
+  .so-menu-toggle
+    display: block
+
+  .so-logo
+    background-position: 15% 0
+
+  .block-overlay
+    display: block
+
+  .tagline
+    margin: 0 5%
+
+  #navbarNav
+    position: fixed
+    top: 0
+    bottom: 0
+    width: 50%
+    left: 0
+    background: rgba(255, 255, 255, 0.94)
+    padding: 2em
+    opacity: 0
+    flex-direction: column
+    transform: translateX(-999px)
+
+    .navbar-nav
+      display: block
+      float: none
+    .special-corner
+      display: flex
+      flex-direction: column-reverse
+      margin: 15px 0
+      > *
+        margin: 8px 0
+      .input-group.search
+        width: 100%
+      input[type="text"]
+        width: 100%
+    &.show
+      transform: translateX(0)
+      opacity: 1
+      z-index: 2500
+
+  .lower-content
+    .container
+      padding: 0 30px
+
+  footer .footer-links
+    width: 90%
+
+  .social-icons
+    width: 10% !important
+
+// Small devices (phones, tablets less than 48em)
+@media (max-width: 47.9em)
+  // write CSS properties here
+  header .container
+    width: 100%
+
+  .so-menu-toggle
+    display: block
+
+  .so-logo
+    background-position: 15% 0
+
+  .tagline
+    margin: 0 5%
+
+  .block-overlay
+    display: block
+
+  #navbarNav
+    position: fixed
+    top: 0
+    bottom: 0
+    width: 60%
+    left: 0
+    background: rgba(255, 255, 255, 0.94)
+    padding: 2em
+    opacity: 0
+    flex-direction: column
+    transform: translateX(-999px)
+
+    .navbar-nav
+      display: block
+      float: none
+    .special-corner
+      display: flex
+      flex-direction: column-reverse
+      margin: 15px 0
+      > *
+        margin: 8px 0
+      .input-group.search
+        width: 100%
+      input[type="text"]
+        width: 100%
+    &.show
+      transform: translateX(0)
+      opacity: 1
+      z-index: 2500
+
+  .lower-content
+    .container
+      padding: 0 30px
+
+  footer .footer-links
+    width: 90%
+
+  .social-icons
+    width: 10% !important
+
+// Medium devices (tablets, small laptops less than 62em)
+@media (max-width: 61.9em)
+  // write
+  .slick-prev
+    left: -50px
+  header
+    .container
+      width: 100%
+      max-width: 100%
+
+  .lower-content *
+    padding: 0 5%
+
+// Large devices (desktops, screens less than 75em)
+@media (max-width: 74.9em)
+  // write CSS properties here
+  .slick-prev
+    left: -50px
+  header
+    .container
+      width: 100%
+      max-width: 100%
+
+  .lower-content *
+    padding: 0 5%
+
+
+@media screen and (min-width: 1452px)
+  header
+    .container
+      max-width: 1152px
+      width: 1152px
