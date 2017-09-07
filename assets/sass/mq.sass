@@ -53,6 +53,22 @@ $mainColor: #169B79
     .container
       padding: 0 30px
 
+  #what-we-offer .blocks
+    margin: 5% 0
+
+  #enquire-div
+    height: 22vh
+    padding: 15% 0
+
+  #enquire-div .enquire-content
+    display: block
+
+  #enquire-div .form-enquire
+    width: 90% !important
+
+  #enquire-div .enquire-content .button
+    width: auto !important
+
   footer .footer-links
     width: 90%
 
@@ -111,6 +127,22 @@ $mainColor: #169B79
     .container
       padding: 0 30px
 
+  #what-we-offer .blocks
+    margin: 5% 0
+
+  #enquire-div
+    height: 22vh
+    padding: 15% 0
+
+  #enquire-div .enquire-content
+    display: block
+
+  #enquire-div .form-enquire
+    width: 90% !important
+
+  #enquire-div .enquire-content .button
+    width: auto !important
+
   footer .footer-links
     width: 90%
 
@@ -119,7 +151,6 @@ $mainColor: #169B79
 
 // Medium devices (tablets, small laptops less than 62em)
 @media (max-width: 61.9em)
-  // write
   .slick-prev
     left: -50px
   header
@@ -127,12 +158,15 @@ $mainColor: #169B79
       width: 100%
       max-width: 100%
 
-  .lower-content *
+  .lower-content > *
     padding: 0 5%
+
+  #enquire-div
+    height: 22vh
+    padding: 9% 0
 
 // Large devices (desktops, screens less than 75em)
 @media (max-width: 74.9em)
-  // write CSS properties here
   .slick-prev
     left: -50px
   header
@@ -140,12 +174,25 @@ $mainColor: #169B79
       width: 100%
       max-width: 100%
 
-  .lower-content *
+  .lower-content > *
     padding: 0 5%
 
+  #enquire-div
+    height: 22vh
+    padding: 9% 0
+
+@media (min-width: 75em)
+  #enquire-div
+    height: 35vh
+    padding: 7% 0
 
 @media screen and (min-width: 1452px)
   header
+    .container
+      max-width: 1152px
+      width: 1152px
+
+  .lower-content
     .container
       max-width: 1152px
       width: 1152px

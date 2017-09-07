@@ -163,6 +163,61 @@ $mainColor: #169B79
       margin-bottom: 2%
       font-family: 'Montserrat', sans-serif
 
+#enquire-div
+  background-image: url('./../img/enquirebg.png')
+  background-position: top center
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+  overflow: hidden
+  transition: all 0.5s ease
+  background-attachment: fixed
+  .enquire-content
+    display: flex
+    text-align: right
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    .headtext
+      margin: 0 2%
+    h3
+      font-size: 2rem
+      color: $mainColor
+    .button
+      width: 10%
+    .close-enquirebtn
+      display: none
+
+  .form-enquire
+    padding: 1% 0
+    margin: 0 auto
+    width: 30%
+    opacity: 0
+    .control
+      margin: 3% 0
+    &.show
+      opacity: 1
+    input.input
+      border-radius: 30px
+    textarea
+      border-radius: 10px
+
+.enquire-expand
+  height: 100vh !important
+
+.course-update-radio
+  margin: 0 2%
+  .radio
+    width: 100%
+    margin: 0
+  strong
+    text-align: left
+    color: #666666
+    float: left
+    clear: both
+    width: 100%
+    margin: 3% 0
+
 // Slick overrides
 .slick-prev:before, .slick-next:before
   color: #666666
